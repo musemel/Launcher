@@ -1,43 +1,50 @@
 SKCraft Launcher
 ================
 
-Need to make it easy for people to install and play your modpack? The SKCraft Launcher platform may be for you if:
+※注意：日本語訳（意訳）です。
 
-:heavy_check_mark: You want your own logo and branding on the launcher, with your own news feed  
-:heavy_check_mark: You want to be able to update the modpack whenever you want  
-:heavy_check_mark: You don't want to depend on anyone else  
-:heavy_check_mark: There's several modpacks you want to provide as a set  
-:heavy_check_mark: You want to provide 'hidden' modpacks that are only accessible by a secret code
+modpackを簡単にインストールしたいですか？  
+SKCraft Launcherプラットフォームは次の場合に適しています。
 
-It may not be for you if:
+:heavy_check_mark: 独自のニュースフィードや、ロゴ、ブランディングが必要な場合  
+:heavy_check_mark: modpackをいつでも更新できるようにしたい場合  
+:heavy_check_mark: 他の人に依存したくない場合  
+:heavy_check_mark: セットとして提供したいmodpackある場合  
+:heavy_check_mark: 秘密のコードでのみアクセス可能な「隠された」modpackを提供したい場合
 
-:small_orange_diamond: You made a cool modpack and you just want it out there  
-:small_orange_diamond: You don't have a website or place for people to download files from  
-:small_orange_diamond: You don't want anything to do with distributing the launcher
+次の場合は適していません。
+
+:small_orange_diamond: modpackを作成しておいておくだけの場合  
+:small_orange_diamond: ファイルをダウンロードするためのwebサイトや場所がない場合  
+:small_orange_diamond: ランチャーの配布を行わない場合
 
 ## What We Do Right
 
-Creating modpacks with this launcher is super easy: :one: only drag & drop of configs and mods into a folder, :two: ZERO! scary XML/JSON files to edit, and :three: there's a nice interface for creating modpacks (command-line is also available).
+このランチャーを使用してmodpackを作成するのは非常に簡単です。  
+  :one: コンフィグとModsをフォルダーにドラッグアンドドロップします。  
+  :two: ありません! XML / JSONファイル？？？  
+  :three: modpackを作成するための素晴らしいインターフェースがあります。（コマンドラインも利用可能です）
 
-The launcher has all standard features that you'd expect like :one: resume of incomplete downloads, :two: incremental updates, and :three: file deduplication (saves disk space when you have files duplicated between updates or modpacks).
+このランチャーには、あなたが期待するすべての標準機能があります。  
+  :one: ダウンロードのレジューム機能  
+  :two: 差分更新  
+  :three: 重複削除（更新やmodpack間のファイルが重複している場合は、ディスク容量を節約します）
 
-LiteLoader, Forge, and .jar mods are supported. You can put resource packs in, or really even random mod files that don't go in the configs or mods folder.
+「LiteLoader」や、「Forge」、「.jar mods」がサポートされています。  
+ リソースパックや、configsフォルダやmodsフォルダにないランダムなmodファイルを配置することもできます。
 
-You do need some sort of website, but it does **not** need anything complicated like PHP.
+何らかのWebサイトが必要ですが、PHPのような複雑な物は必要ありません。
 
-For those technically inclined, you can generate modpacks from Git (or any VCS) using your favorite continuous integration server, and then dynamically create modpacks even down to one per branch or tag.
-
-Best of all, our launcher is Minecraft's oldest surviving modpack launcher platform. :thumbsup:
+技術的には、Gitまたは任意のVCSからCIサーバーを使用して、modpackを生成することができます。
 
 ## Getting Started
 
-You'll probably need a few hours to get everything working. Fortunately, we have a [detailed wiki](https://github.com/SKCraft/Launcher/wiki) with screenshots for every step, intended for someone with minimal technical experience.
-
-For your evaluation, there are sample files provided that you will be able to upload to your site to see if it even works for you.
+作業には数時間かかることが見込まれます。しかし、最小限の技術的経験のある人を対象とした各ステップのスクリーンショットを含む [detailed wiki](https://github.com/SKCraft/Launcher/wiki) があります。
+また、評価を行うためのサンプルファイルが用意されています。サンプルファイルを用いてサイトにアップロードし、ランチャーが機能するかどうかを確認できます。
 
 ## Pretty Pictures
 
-If you are going to create modpacks with our GUI tool, you'll be seeing this beaut:
+GUIツールを使用してmodpackを作成する場合、次のように表示されます。
 
 ![Modpack Creator](readme/pack_manager.png)
 
@@ -45,26 +52,26 @@ If you are going to create modpacks with our GUI tool, you'll be seeing this bea
 
 ![Build Modpacks](readme/packages_generator.png)
 
-Making a modpack is just drag and drop into a folder like this:
+modpackの作成は、各フォルダーにドラッグアンドドロップするだけで行えます。
 
 * src/**config**/
 * src/**mods**/
 * src/**resourcepacks**/
 * loaders/
 
-You'd put LiteLoader and Forge into the *loaders* folder. :ok_hand:
+LiteLoaderとForgeを *loaders* フォルダーに配置します。
 
 ### More Pictures
 
-There's a dark version of the launcher (personally not the creator's cup of tea) that you can use:
+使用できるランチャーのダークバージョンがあります。
 
 ![Skinned](readme/launcher_skinned.png)
 
-Users can select optional mods/features:
+ユーザーはオプションの mod / feature を選択できます。
 
 ![Optional Features](readme/features.png)
 
-The launcher can update itself and you can use it in portable mode too.
+ランチャーは自分自身を更新できます。また、ポータブルモードでも使用できます。
 
 ### The Light Theme
 
